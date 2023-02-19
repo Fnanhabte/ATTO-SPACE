@@ -1,0 +1,121 @@
+@font-face {
+   font-family: Migra;
+   src: url(./Migra\ Extralight\ 200\ \(1\).otf);
+}
+
+$lowblack : #181818;
+
+html > body {
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 100vh;
+   background: conic-gradient(from .50turn at 0% 90%,#c8dae8ba,#c8dae8ba ,#c8dae8ba);
+}
+
+
+.main-wrapper {
+   background: linear-gradient(to left, #777796, #777796, #777796);
+   width: 100%;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   overflow: hidden;
+   box-sizing: border-box;
+
+   & ::selection {
+      color: $lowblack;
+      background: #aca08a;
+   }
+
+   & .form-wrapper {
+      background: linear-gradient(to left, white, white, white);
+      padding: 6rem 3rem;
+      align-items: center;
+      box-sizing: border-box;
+
+      & form {
+         width: 100%;
+         padding: 3rem;
+         overflow: hidden;
+      }
+      .input-email, .input-password {
+         padding: 0.40rem;
+         & > [data-form="inside"] {
+            padding: 0.35rem ;
+            border-radius: 3px;
+            border: 1px solid $lowblack;
+            margin-block-start: 0.20rem;
+            caret-color: blue;
+            &::placeholder {
+               color: #1818187e;
+            }
+            &:focus {
+               background: #3d610b45;
+               transition: all .30s linear;
+
+            }
+         }
+
+      }
+      & [data-form="label"] {
+         color: $lowblack;
+         font: normal 400 clamp(12px,1.6vw, 1rem) Migra;
+      }
+
+      .forgot-pw {
+         text-align: center;
+         width: 250px;
+         & a {
+            color: $lowblack;
+            text-underline-offset:4px;
+            font: normal 400 clamp(12px,1.6vw, 1rem) time;
+
+            &:hover {
+               color: #960707;
+               transition: all 0.30s linear;
+               text-decoration-color: goldenrod;
+            }
+         }
+      }
+      .btn, .google-login {
+         display: block;
+         margin-inline-start: 0rem;
+         box-sizing: border-box;
+         width: 250px;
+         margin-bottom: 1rem;
+         padding: .40rem 0;
+         border-radius: 3px;
+         border-color: transparent;
+         background: linear-gradient(to left, #181818,#181818);
+         color: ghostwhite;
+         cursor: pointer;
+         &:hover{
+            background: #167c49;
+            color: ghostwhite;
+            transition: all .50s ease;
+         }
+      }
+      & .google-login {
+         background: #d3d7da;
+         color: black;
+         border-color: transparent;
+      }
+      & .google-icon {
+         background: url(./images/google.png)no-repeat center center /contain border-box;
+         padding: 10px 10px;
+         margin-inline-end: 1rem;
+      }
+   }
+
+
+   .img-wrapper {
+      background: wheat;
+      & .image {
+         background: url(./images/Auto-space.jpg) no-repeat center center /cover border-box;
+         width: 100%;
+         height: 100vh;
+         user-select: none;
+      }
+   }
+}

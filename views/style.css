@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Migra;
+  src: url(./Migra\ Extralight\ 200\ \(1\).otf);
+}
+html > body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: conic-gradient(from 0.5turn at 0% 90%, rgba(200, 218, 232, 0.7294117647), rgba(200, 218, 232, 0.7294117647), rgba(200, 218, 232, 0.7294117647));
+}
+
+.main-wrapper {
+  background: linear-gradient(to left, #777796, #777796, #777796);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.main-wrapper ::-moz-selection {
+  color: #181818;
+  background: #aca08a;
+}
+.main-wrapper ::selection {
+  color: #181818;
+  background: #aca08a;
+}
+.main-wrapper .form-wrapper {
+  background: linear-gradient(to left, white, white, white);
+  padding: 6rem 3rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+.main-wrapper .form-wrapper form {
+  width: 100%;
+  padding: 3rem;
+  overflow: hidden;
+}
+.main-wrapper .form-wrapper .input-email, .main-wrapper .form-wrapper .input-password {
+  padding: 0.4rem;
+}
+.main-wrapper .form-wrapper .input-email > [data-form=inside], .main-wrapper .form-wrapper .input-password > [data-form=inside] {
+  padding: 0.35rem;
+  border-radius: 3px;
+  border: 1px solid #181818;
+  -webkit-margin-before: 0.2rem;
+          margin-block-start: 0.2rem;
+  caret-color: blue;
+}
+.main-wrapper .form-wrapper .input-email > [data-form=inside]::-moz-placeholder, .main-wrapper .form-wrapper .input-password > [data-form=inside]::-moz-placeholder {
+  color: rgba(24, 24, 24, 0.4941176471);
+}
+.main-wrapper .form-wrapper .input-email > [data-form=inside]::placeholder, .main-wrapper .form-wrapper .input-password > [data-form=inside]::placeholder {
+  color: rgba(24, 24, 24, 0.4941176471);
+}
+.main-wrapper .form-wrapper .input-email > [data-form=inside]:focus, .main-wrapper .form-wrapper .input-password > [data-form=inside]:focus {
+  background: rgba(61, 97, 11, 0.2705882353);
+  transition: all 0.3s linear;
+}
+.main-wrapper .form-wrapper [data-form=label] {
+  color: #181818;
+  font: normal 400 clamp(12px, 1.6vw, 1rem) Migra;
+}
+.main-wrapper .form-wrapper .forgot-pw {
+  text-align: center;
+  width: 250px;
+}
+.main-wrapper .form-wrapper .forgot-pw a {
+  color: #181818;
+  text-underline-offset: 4px;
+  font: normal 400 clamp(12px, 1.6vw, 1rem) time;
+}
+.main-wrapper .form-wrapper .forgot-pw a:hover {
+  color: #960707;
+  transition: all 0.3s linear;
+  text-decoration-color: goldenrod;
+}
+.main-wrapper .form-wrapper .btn, .main-wrapper .form-wrapper .google-login {
+  display: block;
+  -webkit-margin-start: 0rem;
+          margin-inline-start: 0rem;
+  box-sizing: border-box;
+  width: 250px;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0;
+  border-radius: 3px;
+  border-color: transparent;
+  background: linear-gradient(to left, #181818, #181818);
+  color: ghostwhite;
+  cursor: pointer;
+}
+.main-wrapper .form-wrapper .btn:hover, .main-wrapper .form-wrapper .google-login:hover {
+  background: #167c49;
+  color: ghostwhite;
+  transition: all 0.5s ease;
+}
+.main-wrapper .form-wrapper .google-login {
+  background: #d3d7da;
+  color: black;
+  border-color: transparent;
+}
+.main-wrapper .form-wrapper .google-icon {
+  background: url(./images/google.png) no-repeat center center/contain border-box;
+  padding: 10px 10px;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.main-wrapper .img-wrapper {
+  background: wheat;
+}
+.main-wrapper .img-wrapper .image {
+  background: url(./images/Auto-space.jpg) no-repeat center center/cover border-box;
+  width: 100%;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=style.css.map */
