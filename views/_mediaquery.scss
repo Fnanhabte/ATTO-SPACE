@@ -205,10 +205,11 @@
        grid-template-columns: 1fr;
        padding:8.5rem 3.2rem;
         .header  {
-          margin-inline-start:- 2rem;
-          font-size: 2rem;
+          margin-inline-start:- 2.2rem;
+          font-size: 2.5rem;
           letter-spacing: 10px;
           text-align: center;
+          width: 330PX;
 
           & .space {
             color: teal;
