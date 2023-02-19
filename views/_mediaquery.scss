@@ -1,0 +1,556 @@
+@media all and (750px <= width <= 1000px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:0rem 15rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+
+       &::-webkit-scrollbar {
+         background: transparent;
+         width: 1q;
+       }
+
+        .header  {
+          margin-inline-start:1.5rem;
+          font-size: 3.4rem;
+          letter-spacing: 14px;
+           width: 410px;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         width: 450px;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+}
+///⬆️ TABLET, GALAXY FOLD 2, DEVICE GOING DOWN TO PHONE DEVICE
+
+@media all and (595px <= width <= 749px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:0rem 5rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+
+       &::-webkit-scrollbar {
+         background: transparent;
+         width: 1q;
+       }
+
+        .header  {
+          margin-inline-start:1.5rem;
+          font-size: 3.4rem;
+          letter-spacing: 14px;
+           width: 410px;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         width: 450px;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+}
+///⬆️ MID-TABLET DEVICE GOING DOWN TO PHONE DEVICE
+
+@media all and (451px <= width <= 598px)and (min-height:0px) and (max-height:650px){
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:0rem 3rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+
+       &::-webkit-scrollbar {
+         background: transparent;
+         width: 1q;
+       }
+
+        .header  {
+          margin-inline-start:1rem;
+          font-size: 3.4rem;
+          letter-spacing: 14px;
+           width: 410px;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         width: 450px;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+}
+///⬆️ TABLET DEVICE GOING DOWN TO PHONE DEVICE
+
+@media all and (0px <= width <= 400px)and (min-height:0px) and (max-height:950px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:8.5rem 3.2rem;
+        .header  {
+          margin-inline-start:- 2rem;
+          font-size: 2rem;
+          letter-spacing: 10px;
+          text-align: center;
+
+          & .space {
+            color: teal;
+           }
+        }
+
+       form {
+         padding: 0;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               padding: .60rem;
+            }
+         }
+         .forgot-pw {
+            & a {
+               font-size: 14px;
+            }
+         }
+         .btn, .google-login {
+            padding: 0.75rem 0;
+         }
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+
+}
+
+///⬆️ IPHONE-11-12-13 *(PRO)* DEVICE GOING DOWN TO 0PX
+
+@media all and (400px <= width <= 450px)and (min-height:0px) and (max-height:950px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:8.5rem 2rem;
+        .header  {
+          margin-inline-start:0rem;
+          font-size: 2rem;
+          letter-spacing: 10px;
+          text-align: center;
+
+          & .space {
+            color: teal;
+           }
+        }
+
+       form {
+         padding: 0;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 315px;
+               padding: .70rem;
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+
+         .btn, .google-login {
+            width: 340px;
+            margin-bottom: 1.5rem;
+            padding: 0.80rem 0;
+         }
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+}
+
+///⬆️ IPHONE-11-12-13-14 *(PRO-MAX)*  DEVICE GOING DOWN TO 0PX
+
+@media all and (451px <= width <= 770px)and (min-height:900px) and (max-height:1035px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:12rem 12rem;
+
+        .header  {
+          margin-inline-start:0rem;
+          font-size: 3.4rem;
+          letter-spacing: 10px;
+          text-align: center;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+}
+///⬆️ IPAD MINI DEVICE
+
+@media all and (771px <= width <= 850px)and (min-height:1036px) and (max-height:1290px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:12rem 12rem;
+
+        .header  {
+          margin-inline-start:0rem;
+          font-size: 3.4rem;
+          letter-spacing: 10px;
+          text-align: center;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: none;
+       }
+
+    }
+
+}
+
+///⬆️ IPAD AIR 4, IPOD PRO 11, GALAXY TAB S7 DEVICES
+
+@media all and (1001px <= width <= 1439px) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:0rem 8rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+
+       &::-webkit-scrollbar {
+         background: transparent;
+         width: 1q;
+       }
+
+        .header  {
+          margin-inline-start:1.5rem;
+          font-size: 3.4rem;
+          letter-spacing: 14px;
+           width: 410px;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         width: 450px;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: unset;
+         & .image {
+            background: url(./images/Space.jpg) no-repeat center center /cover border-box;
+            transition: all .45s linear;
+         }
+
+       }
+
+    }
+
+}
+///⬆️ LAPTOP, MACBOOK PRO, MACBOOK AIR, GOING UP 1440 PX
+
+@media all and (width > 1440px ) {
+   .main-wrapper {
+      .form-wrapper {
+       grid-template-columns: 1fr;
+       padding:0rem 15rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+
+       &::-webkit-scrollbar {
+         background: transparent;
+         width: 1q;
+       }
+
+        .header  {
+          margin-inline-start:1.5rem;
+          font-size: 3.4rem;
+          letter-spacing: 14px;
+           width: 410px;
+
+          & .space {
+            color: orangered;
+           }
+        }
+
+       form {
+         padding: 0;
+         width: 450px;
+         .input-email, .input-password {
+            & > [data-form="inside"] {
+               width: 335px;
+               padding:1rem;
+               &::placeholder {
+                  color: #181818e5;
+               }
+
+               &:focus {
+                  background: none;
+               }
+            }
+         }
+         .forgot-pw {
+            width: 340px;
+            & a {
+               font-size: 17px;
+            }
+         }
+         & [data-form="label"] {
+            font-size: 1.3rem;
+         }
+
+         .btn, .google-login {
+            width: 360px;
+            margin-bottom: 1.5rem;
+            padding: 0.90rem 0;
+         }
+
+       }
+      }
+      .img-wrapper {
+         display: unset;
+         & .image {
+            background: url(./images/Auto-space.jpg) no-repeat center center /cover border-box;
+            transition: all .45s linear;
+         }
+
+       }
+
+    }
+
+}
+
+///⬆️ LAPTOP L, DESKTOP , TV DEVICES GOING UP 2500 PX+

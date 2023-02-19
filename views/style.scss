@@ -2,6 +2,10 @@
    font-family: Migra;
    src: url(./Migra\ Extralight\ 200\ \(1\).otf);
 }
+@font-face {
+   font-family: Spooky;
+   src: url(./SpookyBrush\ 400.ttf);
+}
 
 $lowblack : #181818;
 
@@ -19,7 +23,7 @@ html > body {
    width: 100%;
    height: 100vh;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
    overflow: hidden;
    box-sizing: border-box;
 
@@ -30,19 +34,40 @@ html > body {
 
    & .form-wrapper {
       background: linear-gradient(to left, white, white, white);
-      padding: 6rem 3rem;
+      padding: 4rem 5rem;
       align-items: center;
       box-sizing: border-box;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      .header {
+      margin-inline-start: 1rem;
+      text-transform: uppercase;
+      color: $lowblack;
+      font: normal 400 clamp(2.5rem,5vw, 2.9rem) Spooky;
+      // letter-spacing: 3px;
+      // text-align: center;
+      // width: 400px;
+        & .space {
+         color: orangered;
+        }
+
+      }
+      &::-webkit-scrollbar {
+         background: transparent;
+         width: 1q;
+       }
+
 
       & form {
          width: 100%;
-         padding: 3rem;
+         padding: 1rem 4.5rem;
          overflow: hidden;
       }
       .input-email, .input-password {
-         padding: 0.40rem;
+         padding: 0.50rem 0;
          & > [data-form="inside"] {
-            padding: 0.35rem ;
+            padding: 0.55rem ;
             border-radius: 3px;
             border: 1px solid $lowblack;
             margin-block-start: 0.20rem;
@@ -65,6 +90,7 @@ html > body {
 
       .forgot-pw {
          text-align: center;
+         // width: 300px;
          width: 250px;
          & a {
             color: $lowblack;
@@ -82,6 +108,7 @@ html > body {
          display: block;
          margin-inline-start: 0rem;
          box-sizing: border-box;
+         // width: 310px;
          width: 250px;
          margin-bottom: 1rem;
          padding: .40rem 0;
@@ -112,10 +139,12 @@ html > body {
    .img-wrapper {
       background: wheat;
       & .image {
-         background: url(./images/Auto-space.jpg) no-repeat center center /cover border-box;
+         background: url(./images/Space.jpg) no-repeat center center /cover border-box;
          width: 100%;
          height: 100vh;
          user-select: none;
       }
    }
 }
+
+@import 'mediaquery';
