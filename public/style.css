@@ -39,6 +39,78 @@ html > body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.main-wrapper .form-wrapper .error-message {
+  position: relative;
+  display: none;
+}
+.main-wrapper .form-wrapper .error-message > h4 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: #ececf4;
+  text-align: center;
+  font: normal 400 clamp(12px, 1.5vw, 1rem) Migra;
+}
+@keyframes error-message {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.main-wrapper .form-wrapper .signIN-success {
+  color: green;
+  text-transform: uppercase;
+  font: normal 400 clamp(12px, 1.6vw, 1rem) Migra;
+  -webkit-margin-start: 4.8rem;
+          margin-inline-start: 4.8rem;
+  animation: success 1s linear forwards;
+  transition: animation 0.1s ease;
+}
+@keyframes success {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: green;
+  }
+}
+.main-wrapper .form-wrapper .signIN-error {
+  color: red;
+  text-transform: uppercase;
+  font: normal 400 clamp(12px, 1.6vw, 1rem) Migra;
+  -webkit-margin-start: 1.5rem;
+          margin-inline-start: 1.5rem;
+  animation: error 1s linear forwards;
+  transition: animation 0.1s ease;
+}
+@keyframes error {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: red;
+  }
+}
 .main-wrapper .form-wrapper .header {
   -webkit-margin-start: 1rem;
           margin-inline-start: 1rem;
@@ -55,7 +127,7 @@ html > body {
 }
 .main-wrapper .form-wrapper form {
   width: 100%;
-  padding: 1rem 4.5rem;
+  padding: 0rem 4.5rem;
   overflow: hidden;
 }
 .main-wrapper .form-wrapper .input-email, .main-wrapper .form-wrapper .input-password {

@@ -9,9 +9,9 @@ const LoginInfo = {
 router.post('/login', (req,res) => {
    if(req.body.email == LoginInfo.email && req.body.password == LoginInfo.password) {
       req.session.email = req.body.email
-      res.send('goog job for sigin in to your email')
+      res.render('index',{Success : 'THANK YOU FOR SIGINING IN'});
    }else {
-      res.send('unathorzied email and password');
+      res.render('index', {Error: " PLEASE TRY AGAIN" })
    };
 });
 

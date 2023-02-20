@@ -5,13 +5,25 @@
          <div class="image"></div>
       </div>
       <div class="form-wrapper">
+         <div class="error-message">
+            <h4>We couldn’t find an account matching the username and password you entered. Please check your username and password and try again.</h4>
+         </div>
           <h1 class="header">
             Welcome to Atto Sp<span class="space">ace</span>
           </h1>
-         <form action="/login" method="POST" class="form">
+          <span class="signIN-success">
+            <% if(locals.Success){%>
+               <%= Success %> <%} %>
+          </span>
+          <span class="signIN-error">
+            <% if(locals.Error){%>
+               <%= Error %> <%} %>
+          </span>
+
+         <form action="/login" method="POST" class="form" id="form">
             <div class="input-email">
                <label for="email" data-form="label">Email</label><br>
-               <input type="email" name="email" placeholder="Enter email" value="" data-form="inside" size="30">
+               <input type="email" name="email" placeholder="Enter email" value="" data-form="inside" size="30" id="email">
             </div>
             <div class="input-password">
                <label for="password" data-form="label">Password</label><br>

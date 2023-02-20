@@ -5,6 +5,8 @@ const port = process.env.port || 3000;
 const session = require('express-session');
 const path = require('path');
 const router = require('./router');
+const { join } = require('path');
+
 
 
 app.use(session({
@@ -17,6 +19,7 @@ app.use(bodyParser.json());
 app.use('/static', express.static(path.join(__dirname, "public")));
 app.use('/images', express.static(path.join(__dirname, "public/images")));
 app.use('/', router);
+
 
 app.set('view engine', "ejs");
 app.get('/',(req,res) =>  {

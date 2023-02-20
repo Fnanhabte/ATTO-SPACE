@@ -27,6 +27,8 @@ html > body {
    overflow: hidden;
    box-sizing: border-box;
 
+
+
    & ::selection {
       color: $lowblack;
       background: #aca08a;
@@ -39,6 +41,91 @@ html > body {
       box-sizing: border-box;
       overflow-y: scroll;
       overflow-x: hidden;
+
+      .error-message {
+         position: relative;
+         display:none;
+         & > h4 {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            color: #ececf4;
+            text-align: center;
+            font: normal 400 clamp(12px,1.5vw, 1rem) Migra;
+         }
+
+         @keyframes error-message {
+            0% {
+               opacity: 0;
+            }
+            50% {
+               opacity: 1;
+            }
+            100% {
+               opacity: 1;
+               top: 0;
+
+            }
+         }
+      }
+
+
+
+      .signIN-success {
+         color: green;
+         text-transform: uppercase;
+         font: normal 400 clamp(12px,1.6vw, 1rem) Migra;
+         margin-inline-start: 4.8rem;
+         animation: success 1s linear forwards;
+         transition: animation .10s ease;
+
+         @keyframes success {
+            0% {
+               opacity: 0;
+
+            }
+            50% {
+               opacity: 0;
+            }
+            80% {
+               opacity: 0;
+            }
+            100% {
+               opacity: 1;
+               color: green;
+            }
+
+         }
+
+      }
+
+      .signIN-error {
+         color: red;
+         text-transform: uppercase;
+         font: normal 400 clamp(12px,1.6vw, 1rem) Migra;
+         margin-inline-start: 1.5rem;
+         animation: error 1s linear forwards;
+         transition: animation .10s ease;
+
+         @keyframes error {
+            0% {
+               opacity: 0;
+
+            }
+            50% {
+               opacity: 0;
+            }
+            80% {
+               opacity: 0;
+            }
+            100% {
+               opacity: 1;
+               color: red;
+            }
+
+         }
+
+      }
 
       .header {
       margin-inline-start: 1rem;
@@ -61,7 +148,7 @@ html > body {
 
       & form {
          width: 100%;
-         padding: 1rem 4.5rem;
+         padding: 0rem 4.5rem;
          overflow: hidden;
       }
       .input-email, .input-password {
