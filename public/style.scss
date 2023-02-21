@@ -17,7 +17,13 @@ html > body {
    background: conic-gradient(from .50turn at 0% 90%,#c8dae8ba,#c8dae8ba ,#c8dae8ba);
 }
 
-
+noscript {
+   text-align: center;
+   color: orangered;
+   font-size: 16px;
+   font-family: Migra;
+   text-transform: uppercase;
+}
 .main-wrapper {
    background: linear-gradient(to left, #777796, #777796, #777796);
    width: 100%;
