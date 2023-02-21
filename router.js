@@ -11,7 +11,7 @@ router.post('/login', (req,res) => {
       req.session.email = req.body.email
       res.render('index',{Success : 'THANK YOU FOR SIGINING IN'});
    }else {
-      res.render('index', {Error: " PLEASE TRY AGAIN" })
+      res.render('index', {Error: "Please check your username and password and try again."})
    };
 });
 

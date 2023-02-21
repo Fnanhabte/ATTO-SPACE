@@ -91,10 +91,11 @@ html > body {
   color: red;
   text-transform: uppercase;
   font: normal 400 clamp(12px, 1.6vw, 1rem) Migra;
-  -webkit-margin-start: 1.5rem;
-          margin-inline-start: 1.5rem;
+  -webkit-margin-start: -40PX;
+          margin-inline-start: -40PX;
   animation: error 1s linear forwards;
   transition: animation 0.1s ease;
+  width: 300px;
 }
 @keyframes error {
   0% {
