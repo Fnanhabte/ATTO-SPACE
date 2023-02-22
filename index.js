@@ -7,6 +7,7 @@ const path = require('path');
 const router = require('./router');
 require('dotenv').config()
 
+
 app.use(session({
    secret:'uuidv4',
    resave:false,
@@ -21,9 +22,10 @@ app.use('/images', express.static(path.join(__dirname, "public/images")));
 app.use('/', router);
 
 app.set('view engine', "ejs");
-app.get('/',(req,res) =>  {
+app.get('/',(req,res,next) =>  {
    res.render('index', {title : "Atto Space"});
 });
+
 
 app.listen(port,() =>{
    console.log('Server is listening at ' + port);

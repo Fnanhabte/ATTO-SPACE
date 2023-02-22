@@ -12,7 +12,9 @@ router.post('/login', (req,res) => {
       res.render('index',{Success : 'THANK YOU FOR SIGINING IN'});
    }else {
       res.render('index', {Error: "Please check your username and password and try again."})
+
    };
 });
+
 
 module.exports = router;
