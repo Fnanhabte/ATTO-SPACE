@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "fnanhabte",
+  "author": "fnan habte",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.1",
